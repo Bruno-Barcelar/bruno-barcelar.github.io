@@ -47,13 +47,7 @@ function clicar() {
     // Mostra o GIF
     gif.style.display = "block";
 
-    // Faz o GIF desaparecer e mostra os botões novamente após 3 segundos
-    setTimeout(function() {
-        gif.style.display = "none"; // Oculta o GIF
-        sim.style.visibility = "visible"; // Torna os botões visíveis novamente
-        nao.style.visibility = "visible"; // Mantém o alinhamento
-    }, 3000);
-
+    
     const texto = document.createElement('div');
     texto.innerText = "te amo, gari s2!";
     texto.style.position = "absolute";
@@ -64,6 +58,15 @@ function clicar() {
     texto.style.color = "red"; // Altere a cor conforme necessário
     texto.style.textAlign = "center";
     document.body.appendChild(texto);
+
+    // Faz o GIF desaparecer e mostra os botões novamente após 3 segundos
+    setTimeout(function() {
+        gif.style.display = "none"; // Oculta o GIF
+        setTimeout(() => texto.remove(), 1000); // Remove o texto após o fade-out
+        sim.style.visibility = "visible"; // Torna os botões visíveis novamente
+        nao.style.visibility = "visible"; // Mantém o alinhamento
+    }, 3000);
+
 }
 
 
