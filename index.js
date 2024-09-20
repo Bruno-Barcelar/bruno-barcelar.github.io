@@ -61,7 +61,7 @@ function clicar() {
     texto.style.left = "50%";
     texto.style.transform = "translate(-50%, -50%)";
     texto.style.fontSize = "40px"; // Ajuste o tamanho conforme necessário
-    texto.style.color = "white"; // Altere a cor conforme necessário
+    texto.style.color = "red"; // Altere a cor conforme necessário
     texto.style.textAlign = "center";
     document.body.appendChild(texto);
 }
