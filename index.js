@@ -53,7 +53,19 @@ function clicar() {
         sim.style.visibility = "visible"; // Torna os botões visíveis novamente
         nao.style.visibility = "visible"; // Mantém o alinhamento
     }, 3000);
+
+    const texto = document.createElement('div');
+    texto.innerText = "te amo, gari s2!";
+    texto.style.position = "absolute";
+    texto.style.top = "50%";
+    texto.style.left = "50%";
+    texto.style.transform = "translate(-50%, -50%)";
+    texto.style.fontSize = "40px"; // Ajuste o tamanho conforme necessário
+    texto.style.color = "white"; // Altere a cor conforme necessário
+    texto.style.textAlign = "center";
+    document.body.appendChild(texto);
 }
+
 
 function createCake() {
     const cake = document.createElement('img');
