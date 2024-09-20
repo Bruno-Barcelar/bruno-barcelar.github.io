@@ -93,4 +93,4 @@ function createCake() {
 }
 
 // Cria bolos a cada 500ms
-setInterval(createCake, 500);
+setInterval(createCake, 1000);
